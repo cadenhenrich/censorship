@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "censorship",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Censorship",
+  "description": "Speech Control for Minecraft",
   "authors": [
-    "Me!"
+    "Caden Henrich",
+    "Lucette Gold",
+    "Max Vollertsen"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/cadenhenrich/censorship"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/censorship/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.cadenhenrich.censorship.CensorshipMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "censorship.mixins.json"
   ],
 
   "depends": {
