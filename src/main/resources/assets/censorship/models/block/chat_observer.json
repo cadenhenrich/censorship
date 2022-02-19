@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "side": "censorship:block/chat_observer_side",
+        "end": "censorship:block/chat_observer_end"
+    }
+}

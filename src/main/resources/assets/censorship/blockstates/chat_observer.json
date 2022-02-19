@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "censorship:block/chat_observer" }
+    }
+}

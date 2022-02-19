@@ -1,4 +1,4 @@
-package net.cadenhenrich.censorship;
+package net.cadenhenrich.censorship.mixin;
 
 import net.cadenhenrich.censorship.CensorshipMod;
 import net.minecraft.client.gui.screen.TitleScreen;
