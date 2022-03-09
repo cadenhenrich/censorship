@@ -2,7 +2,6 @@ package net.cadenhenrich.censorship;
 
 import net.cadenhenrich.censorship.block.ChatObserverBlock;
 import net.cadenhenrich.censorship.block.entity.ChatObserverBlockEntity;
-import net.cadenhenrich.censorship.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -49,8 +48,6 @@ public class CensorshipMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Hello *CENSORED* world!");
-        // ModItems.registerModItems();
-        // ModBlocks.registerModBlocks();
 
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "chat_observer"),
                 CHAT_OBSERVER);
