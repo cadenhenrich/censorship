@@ -1,3 +1,25 @@
 {
-    "block.censorship.chat_observer": "Chat Observer"
+    "block.censorship.chat_observer": "Chat Observer",
+    "death.attack.censor": "%s was censored",
+    "death.attack.censor.player": "%s was censored while fighting %s",
+    "death.attack.executed": "%s was executed",
+    "death.attack.executed.player": "%s was executed while fighting %s",
+    "death.attack.silenced": "%s was silenced",
+    "death.attack.silenced.player": "%s was silenced while fighting %s",
+    "death.attack.forbidden": "%s found a forbidden word",
+    "death.attack.forbidden.player": "%s found a forbidden word while fighting %s",
+    "death.attack.disruption": "%s was causing a disruption",
+    "death.attack.disruption.player": "%s was causing a disruption while fighting %s",
+    "death.attack.chaos": "%s was inciting chaos",
+    "death.attack.chaos.player": "%s was inciting chaos while fighting %s",
+    "death.attack.imposter": "%s was the imposter",
+    "death.attack.imposter.player": "%s was discovered while fighting %s",
+    "death.attack.problem": "%s won’t be a problem anymore",
+    "death.attack.problem.player": "%s was taken care of by %s",
+    "death.attack.behave": "%s will behave from now on",
+    "death.attack.behave.player": "%s was made to behave by %s",
+    "death.attack.rules": "The rules were too hard to follow for %s",
+    "death.attack.rules.player": "The rules were too hard to follow for %s while fighting %s",
+    "death.attack.social": "%s had their social credit deducted",
+    "death.attack.social.player": "%s had their social credit deducted while fighting %s"
 }
