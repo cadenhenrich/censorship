@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "CensorshipMixin"
+    "CensorshipMixin",
+    "ServerPlayNetworkHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

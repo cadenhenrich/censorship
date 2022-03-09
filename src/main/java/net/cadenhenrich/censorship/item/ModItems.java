@@ -12,7 +12,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        CensorshipMod.LOGGER.info("Registering ModItems for" +
+        CensorshipMod.LOGGER.info("Registering ModItems for " +
                 CensorshipMod.MOD_ID);
     }
 }
