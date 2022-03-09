@@ -7,7 +7,8 @@
   ],
   "client": [
     "CensorshipMixin",
-    "ServerPlayNetworkHandlerMixin"
+    "ServerPlayNetworkHandlerMixin",
+    "ServerPlayNetworkHandlerAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

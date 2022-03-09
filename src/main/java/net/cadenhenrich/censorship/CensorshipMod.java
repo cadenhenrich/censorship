@@ -15,6 +15,7 @@ import net.minecraft.util.registry.Registry;
 
 import java.util.ArrayList;
 // import java.util.Arrays;
+import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +29,9 @@ public class CensorshipMod implements ModInitializer {
                 .requiresTool());
     public static BlockEntityType<ChatObserverBlockEntity> CHAT_OBSERVER_BLOCK_ENTITY;
 
-    public static ArrayList<String> censorList = new ArrayList<String>();
+    private static ArrayList<String> censorList = new ArrayList<String>();
+    private static ArrayList<UUID> censoredPlayers = new ArrayList<UUID>();
+    private static ArrayList<UUID> uncensorQueue = new ArrayList<UUID>();
 
     public static void initializeCensorList() {
         censorList.add("deez");
@@ -43,6 +46,33 @@ public class CensorshipMod implements ModInitializer {
             }
         }
         return false;
+    }
+
+    public static void addCensoredPlayer(UUID uuid) {
+        if (!censoredPlayers.contains(uuid))
+            censoredPlayers.add(uuid);
+
+        uncensorQueue.remove(uuid);
+    }
+
+    public static boolean isCensored(UUID uuid) {
+        return censoredPlayers.contains(uuid);
+    }
+
+    public static void uncensor(UUID uuid) {
+        uncensorQueue.add(uuid);
+    }
+
+    public static void removeQueued() {
+        for (UUID uuid : uncensorQueue) {
+            censoredPlayers.remove(uuid);
+        }
+
+        uncensorQueue.clear();
+    }
+
+    public static void clearCensoredPlayers() {
+        censoredPlayers.clear();
     }
 
     @Override
