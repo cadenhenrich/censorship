@@ -25,7 +25,7 @@ public class CensorshipMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static final ChatObserverBlock CHAT_OBSERVER = new ChatObserverBlock(
-            FabricBlockSettings.of(Material.METAL).strength(6f)
+            FabricBlockSettings.of(Material.STONE).strength(6f)
                 .requiresTool());
     public static BlockEntityType<ChatObserverBlockEntity> CHAT_OBSERVER_BLOCK_ENTITY;
 
