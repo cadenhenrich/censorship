@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " J ",
+        "NON",
+        " C "
+    ],
+    "key": {
+        "J": {
+            "item": "minecraft:jukebox"
+        },
+        "O": {
+            "item": "minecraft:observer"
+        },
+        "N": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "C": {
+            "item": "minecraft:comparator"
+        }
+    },
+    "result": {
+        "item": "censorship:chat_observer",
+        "count": 1
+    }
+}
