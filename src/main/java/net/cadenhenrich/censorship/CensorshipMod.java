@@ -14,7 +14,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import java.util.ArrayList;
-// import java.util.Arrays;
 import java.util.UUID;
 
 import org.slf4j.Logger;
@@ -34,13 +33,13 @@ public class CensorshipMod implements ModInitializer {
     private static ArrayList<UUID> uncensorQueue = new ArrayList<UUID>();
 
     public static void initializeCensorList() {
-        censorList.add("deez");
-        censorList.add("nuts");
+        for (String line : CensorLists.OLYMPICS_ILLEGAL) {
+            censorList.add(line);
+        }
     }
 
     public static boolean shouldCensor(String message) {
         for (String s : censorList) {
-            LOGGER.info("Checking " + s + "...");
             if (message.contains(s)) {
                 return true;
             }
