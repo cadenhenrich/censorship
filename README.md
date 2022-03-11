@@ -3,15 +3,20 @@
 ## Features
 + Chat observer
     + Observes chat
-    + "Blocks" incompatible words
-+ Word list
-    + Can be inserted into chat observer to determine which words are blocked
-    + Written by the player
-+ VPN
-    + Counteracts the effects of the chat observer
-    + Totem-like (single use)
+    + "Blocks" words in the Beijing 2022 Olympic illegalwords.txt list
+    + Detects players in a certain radius around the block
 
-## Setup
+## Future Features
+> Note: These will not necessarily ever be added. If you want to add them, either fork this or PR something.
++ Word list handling for custom player-designed word lists
+    + Interaction with the block to define these (gui, words list item)
++ Ability to switch between word lists in use via a command for server-wide word lists
++ VPN / Sat Phone item to cancel the effects of the chat observer
+
+## Installation
+Download the jar from the releases page.
+
+## Contributing
 
 For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
 
